@@ -62,6 +62,11 @@
 		</dependency>
 	</dependencies>
 
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/Fiji_Developer/</url>
+	</ciManagement>
+
 	<scm>
 		<connection>scm:git:git://github.com/fiji/Fiji_Developer</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Fiji_Developer</developerConnection>
