@@ -285,9 +285,13 @@ public class MediaWikiClient {
 
 		if (!getSessionKey) {
 			String cookie = "";
-			for (String key : cookies.keySet())
-				cookie += (cookie.length() == 0 ? "" : "; ")
-					+ key + "=" + cookies.get(key);
+			for (String key : cookies.keySet()) {
+				if (key.endsWith("LoggedOut")) continue;
+				final String value = cookies.get(key);
+				if ("deleted".equals(value)) continue;
+				if (cookie.length() > 0) cookie += "; ";
+				cookie += key + "=" + value;
+			}
 			conn.setRequestProperty("Cookie", cookie);
 		}
 
@@ -398,7 +402,13 @@ public class MediaWikiClient {
 				int equal = s.indexOf('=');
 				int semicolon = s.indexOf(';');
 				if (equal > 0 && semicolon > equal) {
-					cookies.put(s.substring(0, equal), s.substring(equal + 1, semicolon));
+					final String key = s.substring(0, equal);
+					final String value = s.substring(equal + 1, semicolon);
+					if ("deleted".equals(value)) {
+						cookies.remove(key);
+					} else {
+						cookies.put(key, value);
+					}
 				}
 			}
 		}
