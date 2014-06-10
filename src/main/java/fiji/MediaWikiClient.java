@@ -55,7 +55,7 @@ public class MediaWikiClient {
 	String sessionID, domain, loginToken;
 
 	public MediaWikiClient() {
-		this("http://fiji.sc/wiki/index.php");
+		this("http://fiji.sc/index.php");
 	}
 
 	public MediaWikiClient(String wikiBaseURI) {
