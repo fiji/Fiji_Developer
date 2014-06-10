@@ -55,10 +55,10 @@
 			<artifactId>Fiji_Plugins</artifactId>
 			<version>${fiji.version}</version>
 		</dependency>
+		<!-- script editor -->
 		<dependency>
-			<groupId>sc.fiji</groupId>
-			<artifactId>Script_Editor</artifactId>
-			<version>${fiji.version}</version>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-ui-swing</artifactId>
 		</dependency>
 	</dependencies>
 

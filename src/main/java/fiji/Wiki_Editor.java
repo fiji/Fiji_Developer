@@ -23,7 +23,6 @@
 
 package fiji;
 
-import fiji.scripting.TextEditor;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.Menus;
@@ -82,6 +81,10 @@ import javax.swing.text.html.HTML.Attribute;
 import javax.swing.text.html.HTML.Tag;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
+
+import org.scijava.Context;
+
+import net.imagej.ui.swing.script.TextEditor;
 
 public class Wiki_Editor implements PlugIn, ActionListener {
 	protected String title;
@@ -216,7 +219,8 @@ public class Wiki_Editor implements PlugIn, ActionListener {
 		changeURL, insertPluginInfobox, whiteImage, importHTML;
 
 	protected void addEditor() {
-		editor = new TextEditor(null);
+		final Context context = (Context) IJ.runPlugIn(Context.class.getName(), "");
+		editor = new TextEditor(context);
 		editor.getTextArea().setLineWrap(true);
 
 		int ctrl = Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
