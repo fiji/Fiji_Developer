@@ -1,7 +1,6 @@
 package fiji;
 
 import ij.Prefs;
-
 import ij.gui.GenericDialog;
 
 import java.awt.TextField;

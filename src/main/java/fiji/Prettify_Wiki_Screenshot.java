@@ -1,21 +1,15 @@
 package fiji;
 
 import fiji.drawing.Linear_Gradient;
-
 import fiji.selection.Select_Bounding_Box;
-
 import ij.IJ;
 import ij.ImagePlus;
-
 import ij.gui.Line;
-
 import ij.plugin.filter.PlugInFilter;
-
 import ij.process.Blitter;
 import ij.process.ColorProcessor;
 import ij.process.ImageConverter;
 import ij.process.ImageProcessor;
-
 import ij3d.Content;
 import ij3d.Image3DUniverse;
 import ij3d.ImageCanvas3D;

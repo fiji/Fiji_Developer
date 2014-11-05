@@ -24,13 +24,7 @@
 package fiji;
 
 import ij.IJ;
-
 import ij.plugin.BrowserLauncher;
-
-import java.net.URL;
-import java.net.HttpURLConnection;
-import java.net.URLConnection;
-import java.net.URLEncoder;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -38,13 +32,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-
-import java.util.Map;
-import java.util.List;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLEncoder;
 import java.util.HashMap;
-
-import java.util.regex.Pattern;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;

@@ -2,31 +2,22 @@ package fiji;
 
 import ij.IJ;
 import ij.ImagePlus;
-
 import ij.gui.GenericDialog;
-
 import ij.plugin.filter.PlugInFilter;
-
 import ij.process.ImageProcessor;
 
 import java.awt.Graphics;
 import java.awt.Toolkit;
-
-import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-
 import java.awt.image.BufferedImage;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-
 import java.util.Iterator;
 
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
-
 import javax.imageio.stream.ImageOutputStream;
 
 public class Upload_Image_To_Wiki implements PlugInFilter {
