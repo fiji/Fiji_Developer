@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>Fiji_Developer</artifactId>
-	<version>2.0.3-SNAPSHOT</version>
+	<version>2.0.3</version>
 
 	<name>plugins/Fiji_Developer.jar</name>
 	<description />
@@ -18,7 +18,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/fiji/Fiji_Developer</connection>
 		<developerConnection>scm:git:git@github.com:fiji/Fiji_Developer</developerConnection>
-		<tag>HEAD</tag>
+		<tag>Fiji_Developer-2.0.3</tag>
 		<url>https://github.com/fiji/Fiji_Developer</url>
 	</scm>
 	<ciManagement>
