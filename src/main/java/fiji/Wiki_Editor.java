@@ -82,9 +82,8 @@ import javax.swing.text.html.HTML.Tag;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 
-import net.imagej.ui.swing.script.TextEditor;
-
 import org.scijava.Context;
+import org.scijava.ui.swing.script.TextEditor;
 
 public class Wiki_Editor implements PlugIn, ActionListener {
 	protected String title;

@@ -58,15 +58,16 @@
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>imagej-ui-swing</artifactId>
-		</dependency>
 
 		<!-- SciJava dependencies -->
 		<dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>scijava-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>script-editor</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 </project>
